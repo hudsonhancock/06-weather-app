@@ -6,6 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/3bf00e26c2.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./Assets/style.css">
     <title>Minimalist's Weather App</title>
 </head>
@@ -19,17 +24,17 @@
 
         <section class="search">
             <h1 id="s_text">Search for a City:</h1>
-            <input class="btn" id="s_input" type="text" placeholder="insert a city...">
-            <button id="search_btn">Get Weather</button>
+            <input id="s_input" type="text" placeholder="Insert a city...">
+            <button class="btn" id="search_btn">Get Weather</button>
             <hr>
             <button class="btn" data-city="Atlanta" id="s_history_btn">Atlanta</button>
-            <button class="btn" data-city="San Diego">San Diego</button>
-            <button class="btn" data-city="New York">New York</button>
+            <button class="btn" data-city="San Diego" id="s_history_btn">San Diego</button>
+            <button class="btn" data-city="New York" id="s_history_btn">New York</button>
         </section>
 
         <section class="info">
             <section class="current">
-                <h1 id="today"><span id="selected_city">Atlanta</span><span id="current_date">7/28/21</span></h1>
+                <h1 id="today"><span id="selected_city">Atlanta </span><span id="current_date">7/28/21</span></h1>
                 <p>Temp: <span id="temp">74.01°F</span></p>
                 <p>Wind: <span id="wind">6.67 MPH</span></p>
                 <p>Humidity: <span id="humidity">46%</span></p>
