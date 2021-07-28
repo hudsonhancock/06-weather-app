@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/3bf00e26c2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./Assets/style.css">
+    <title>Minimalist's Weather App</title>
+</head>
+
+<body>
+    <header>
+        <h1 id="h_text">weather.</h1>
+    </header>
+
+    <main>
+
+        <section class="search">
+            <h1 id="s_text">Search for a City:</h1>
+            <input class="btn" id="s_input" type="text" placeholder="insert a city...">
+            <button id="search_btn">Get Weather</button>
+            <hr>
+            <button class="btn" data-city="Atlanta" id="s_history_btn">Atlanta</button>
+            <button class="btn" data-city="San Diego">San Diego</button>
+            <button class="btn" data-city="New York">New York</button>
+        </section>
+
+        <section class="info">
+            <section class="current">
+                <h1 id="today"><span id="selected_city">Atlanta</span><span id="current_date">7/28/21</span></h1>
+                <p>Temp: <span id="temp">74.01°F</span></p>
+                <p>Wind: <span id="wind">6.67 MPH</span></p>
+                <p>Humidity: <span id="humidity">46%</span></p>
+                <p>UV Index: <span id="uv">0.47</span></p>
+            </section>
+
+            <section class="future">
+                <div class="container">
+                    <div class="card">
+                        <h4 id="fd">7/29/21</h4>
+                        <i class="fas fa-cloud-showers-heavy"></i>
+                        <p id="ft">73.72°F</p>
+                        <p id="fw">9.53 MPH</p>
+                        <p id="fh">66%</p>
+                    </div>
+                </div>
+            </section>
+
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+
+    <script src="./Assets/app.js"></script>
+</body>
+
+</html>
