@@ -16,46 +16,81 @@
 </head>
 
 <body>
-    <header>
-        <h1 id="h_text">weather.</h1>
-    </header>
 
-    <main>
+    <div class="wrapper">
+        <header>
+            <h1 id="h_text">weather.</h1>
+        </header>
 
-        <section class="search">
-            <h1 id="s_text">Search for a City:</h1>
-            <input id="s_input" type="text" placeholder="Insert a city...">
-            <button class="btn" id="search_btn">Get Weather</button>
-            <hr>
-            <button class="btn" data-city="Atlanta" id="s_history_btn">Atlanta</button>
-            <button class="btn" data-city="San Diego" id="s_history_btn">San Diego</button>
-            <button class="btn" data-city="New York" id="s_history_btn">New York</button>
-        </section>
+        <main>
 
-        <section class="info">
-            <section class="current">
-                <h1 id="today"><span id="selected_city">Atlanta </span><span id="current_date">7/28/21</span></h1>
-                <p>Temp: <span id="temp">74.01°F</span></p>
-                <p>Wind: <span id="wind">6.67 MPH</span></p>
-                <p>Humidity: <span id="humidity">46%</span></p>
-                <p>UV Index: <span id="uv">0.47</span></p>
-            </section>
-
-            <section class="future">
-                <div class="container">
-                    <div class="card">
-                        <h4 id="fd">7/29/21</h4>
-                        <i class="fas fa-cloud-showers-heavy"></i>
-                        <p id="ft">73.72°F</p>
-                        <p id="fw">9.53 MPH</p>
-                        <p id="fh">66%</p>
-                    </div>
+            <section class="search">
+                <div id="search_container">
+                    <h1 id="s_text">Search for a City:</h1>
+                    <input id="s_input" type="text" placeholder="Insert a city...">
+                    <button class="btn" id="search_btn">Get Weather</button>
+                    <hr>
+                </div>
+                <div id="history_container">
+                    <button class="btn" data-city="Atlanta" id="s_history_btn">Atlanta</button>
+                    <button class="btn" data-city="San Diego" id="s_history_btn">San Diego</button>
+                    <button class="btn" data-city="New York" id="s_history_btn">New York</button>
                 </div>
             </section>
 
-        </section>
+            <section class="info">
+                <section class="current">
+                    <h1 id="today"><span id="selected_city">Atlanta </span><span id="current_date">7/28/21</span></h1>
+                    <p>Temp: <span id="temp">74.01°F</span></p>
+                    <p>Wind: <span id="wind">6.67 MPH</span></p>
+                    <p>Humidity: <span id="humidity">46%</span></p>
+                    <p>UV Index: <span id="uv">0.47</span></p>
+                </section>
 
+                <h3>5-Day Forecast</h3>
 
+                <section class="future">
+                    <div class="container">
+                        <div class="card">
+                            <h4 id="fd">7/29/21</h4>
+                            <i class="fas fa-cloud-showers-heavy"></i>
+                            <p id="ft">73.72°F</p>
+                            <p id="fw">9.53 MPH</p>
+                            <p id="fh">66%</p>
+                        </div>
+                        <div class="card">
+                            <h4 id="fd">7/29/21</h4>
+                            <i class="fas fa-cloud-showers-heavy"></i>
+                            <p id="ft">73.72°F</p>
+                            <p id="fw">9.53 MPH</p>
+                            <p id="fh">66%</p>
+                        </div>
+                        <div class="card">
+                            <h4 id="fd">7/29/21</h4>
+                            <i class="fas fa-cloud-showers-heavy"></i>
+                            <p id="ft">73.72°F</p>
+                            <p id="fw">9.53 MPH</p>
+                            <p id="fh">66%</p>
+                        </div>
+                        <div class="card">
+                            <h4 id="fd">7/29/21</h4>
+                            <i class="fas fa-cloud-showers-heavy"></i>
+                            <p id="ft">73.72°F</p>
+                            <p id="fw">9.53 MPH</p>
+                            <p id="fh">66%</p>
+                        </div>
+                        <div class="card">
+                            <h4 id="fd">7/29/21</h4>
+                            <i class="fas fa-cloud-showers-heavy"></i>
+                            <p id="ft">73.72°F</p>
+                            <p id="fw">9.53 MPH</p>
+                            <p id="fh">66%</p>
+                        </div>
+                    </div>
+                </section>
+
+            </section>
+    </div>
 
 
 
