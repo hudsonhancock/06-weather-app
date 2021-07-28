@@ -117,8 +117,8 @@ hr{
 
 
 /* ------------------------------------------ */
-/* @media screen and (min-width: 376px) {
+@media screen and (min-width: 1025px) {
     main{
         flex-direction: row;
     }
-} */
+}
