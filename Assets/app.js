@@ -47,6 +47,11 @@ $( document ).ready(function() {
                              return response.json();
                         })
                             .then(function(data) {
+
+                                $('.container').empty()
+
+                                $('s_input').text('');
+
                                 var date = new Date(data.daily[0].dt * 1000);
 
                                 $('#current_date').text(date.toLocaleString().substr(-21, 9));
@@ -63,15 +68,29 @@ $( document ).ready(function() {
 
 
                                 for(i = 1; i <= 5; i++){
+                                    var iconcode = data.daily[i].weather[0].icon;
                                     var milliseconds = new Date(data.daily[i].dt * 1000);
                                     
                                     var futureDate = milliseconds.toLocaleString().substr(-21, 9)
+
+                                    
+
+                                    console.log(data.daily[i].weather[0].icon);
+                            
+
+                                    var futureIcon = 'http://openweathermap.org/img/w/' + iconcode + '.png'
+
+                                    
+
+
 
                                     var futureTemp = data.daily[i].temp.day;
                                     var futureWindSpeed = data.daily[i].wind_speed;
                                     var futureHumidity = data.daily[i].humidity;
 
-                                    $('.container').append('<div class="card"><h4 id="fd">' + futureDate + '</h4><i class="fas fa-cloud-showers-heavy"></i><p id="ft">' + futureTemp + '°F</p><p id="fw">' + futureWindSpeed + ' MPH</p><p id="fh">' + futureHumidity + '%</p></div>');
+                                    $('.container').append('<div class="card"><h4 id="fd">' + futureDate + '</h4><img id="' + i +  '" src=""><p id="ft">' + futureTemp + '°F</p><p id="fw">' + futureWindSpeed + ' MPH</p><p id="fh">' + futureHumidity + '%</p></div>');
+
+                                    $('#' + i).attr('src', futureIcon)
                                 }
 
                                 
@@ -89,36 +108,6 @@ $( document ).ready(function() {
             })
 
     })
-
-
-    
-
-
-
-
-
-
-    
-    // function getWeather(){  
-
-    //     fetch(requestUrl)
-    //             .then(function (response) {
-    //                 if (!response.ok){
-    //                     throw Error("ERROR")
-    //                 } 
-    //                 return response.json();
-    //               })
-    //             .then(function (data) {
-    //                 console.log(data);
-                   
-                     
-    //                   });
-    
-    //                 }
-    
-    //                 getWeather();
-
-
 
 
                 });
