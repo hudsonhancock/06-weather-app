@@ -125,6 +125,7 @@ hr{
     margin-bottom: 1rem;
     background-color: rgb(206, 204, 204);
     width: 100%;
+    
 }
 
 
@@ -244,6 +245,7 @@ footer{
         margin-bottom: 1rem;
         background-color: rgb(206, 204, 204);
         width: 11rem;
+        margin-right: 1rem;
     }
 
     .current{

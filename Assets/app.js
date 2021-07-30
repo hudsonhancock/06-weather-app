@@ -30,6 +30,8 @@ $( document ).ready(function() {
             var cityNameText = data.city.name
             console.log(cityNameText);
             $('#selected_city').text(cityNameText + ' ');
+
+            $('#history_container').append('<button class="btn" data-city="' + cityNameText + '" id="s_history_btn">' + cityNameText + '</button>');
             
             var lat = data.city.coord.lat;
             console.log(lat);
@@ -57,7 +59,6 @@ $( document ).ready(function() {
 
                                 $('section.hide').removeClass('hide');
 
-                                
 
                                 
                         });
