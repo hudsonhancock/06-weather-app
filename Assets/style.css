@@ -26,6 +26,10 @@ body{
     flex-direction: column;
 }
 
+.hide{
+    visibility: hidden;
+}
+
 
 /* ------------------------------------------ */
 
