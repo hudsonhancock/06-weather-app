@@ -62,7 +62,7 @@ $( document ).ready(function() {
                                 // console.log(data.daily[2].dt);
 
 
-                                for(i = 1; i < 5; i++){
+                                for(i = 1; i <= 5; i++){
                                     var milliseconds = new Date(data.daily[i].dt * 1000);
                                     
                                     var futureDate = milliseconds.toLocaleString().substr(-21, 9)
