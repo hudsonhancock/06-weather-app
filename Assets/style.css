@@ -15,6 +15,7 @@
 body{
     font-family: var(--minimal);
     font-size: 20px;
+    min-height: 100vh;
 }
 
 .wrapper{
@@ -222,7 +223,7 @@ footer{
     main{
         flex-direction: column;
         justify-content: center;
-        /* height: 90vh; */
+        min-height: 100vh;
     }
 
     #search_container{
@@ -282,5 +283,14 @@ footer{
         text-align: left;
         margin: 1rem;
         padding-left: 1.5rem;
+    }
+
+    footer{
+        position: relative;
+        margin-top: auto;
+    }
+
+    .container_f{
+     
     }
 }
