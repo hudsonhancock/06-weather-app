@@ -85,12 +85,10 @@ $(document).ready(function () {
 
             checkData = JSON.parse(localStorage.getItem("History"));
 
-            // if (checkData.indexOf(cityNameText)) {
-            //   return;
-            // } else {
-            //   readyHistory.push(cityNameText);
-            //   console.log(readyHistory);
-            // }
+       
+              readyHistory.push(cityNameText);
+              console.log(readyHistory);
+            
 
             localStorage.setItem("History", JSON.stringify(readyHistory));
 
