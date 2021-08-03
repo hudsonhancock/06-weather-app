@@ -43,6 +43,8 @@ $(document).ready(function () {
       .then(function (data) {
         console.log(data);
         var cityNameText = data.city.name;
+        readyHistory.push(cityNameText);
+        console.log(readyHistory);
         console.log(cityNameText);
         $("#selected_city").text(cityNameText + " ");
 
@@ -82,13 +84,6 @@ $(document).ready(function () {
             };
 
             localStorage.setItem("City", JSON.stringify(userCitySearch));
-
-            checkData = JSON.parse(localStorage.getItem("History"));
-
-       
-              readyHistory.push(cityNameText);
-              console.log(readyHistory);
-            
 
             localStorage.setItem("History", JSON.stringify(readyHistory));
 
